@@ -1,0 +1,59 @@
+/*Animação Seção Inicial*/
+.info-container.animate {
+    animation: slideLeft 1.5s;
+}
+.img-container.animate {
+    animation: slideRight 1.5s;
+}
+
+/*Animação Menu Mobile*/
+.mobile-menu.active {
+    transform: rotate(90deg);
+}
+
+[data-animar].animar {
+    animation: slideIn 0.8s;
+    opacity: 1;
+}
+[data-animar] {
+    opacity: 0;
+    transition: 0.8s;
+}
+
+
+[data-anima-texto] {
+    max-width: 14ch; 
+    white-space: nowrap;
+    animation: 
+      digitar 4s steps(40, end);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate3d(-80px, 0, 0);
+        opacity: 0;
+    } to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-500px);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(500px);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes digitar {
+    from { width: 0 }
+    to { width: 14ch }
+}

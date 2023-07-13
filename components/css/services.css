@@ -1,0 +1,51 @@
+#services {
+    width: 100%;
+    height: fit-content;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 4em;
+}
+
+.slider {
+    padding: 4px;
+    width: 100%;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.slider > article {
+    text-align: center;
+
+    flex-basis: 300px;
+    
+    max-width: 480px;
+    min-width: 300px;
+
+    border-radius: 4px;
+    
+    margin: auto;
+    padding: 6px;
+    transition: all .5s;
+}
+.slider > article:hover {
+    background: #222;
+}
+
+.slider > article > h3 {
+    font-size: max(min(8vw, 3em), 1.5em);
+}
+.slider > article > p {
+    text-align: center;
+    font-size: max(min(8vw, 1.8em), 1.3em);
+    padding: 5px;
+}
+
+.dev-icon {
+    min-width: 90px;
+    max-width: 140px;
+    height: auto;
+}

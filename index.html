@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links CSS-->
+    <link rel="shortcut icon" href="./assets/imgs/tankman.webp" type="image/x-icon">
+    <!--CSS Principal-->
+    <link rel="stylesheet" href="./components/css/style.css">
+
+    <!--Link FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+    <!--Fonte Externa-->
+    <style>
+        @font-face {
+            font-family: "Typo Formal";
+            src: url('./assets/fonts/typo-formal.otf');
+        }
+    </style>
+
+    <title>Arthur Santos | Portfolio Website</title>
+</head>
+<body>
+    <audio src="./assets/audio/music.mp3" style="display: none;"></audio>
+          
+    <header>
+        <div class="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+        <nav class="menu-wrap">
+            <ul class="menu">
+                <li class="menu-item"><a href="#about">Sobre</a></li>
+                <li class="menu-item"><a href="#skills">Conhecimentos</a></li>
+                <li class="menu-item"><a href="#projects">Projetos</a></li>
+                <li class="menu-item"><a href="#services">Serviços</a></li>
+            </ul>
+        </nav>
+
+        <div class="my-logo-container">
+            <img src="./assets/imgs/tankman.webp" alt="Logo ilustrativa">
+        </div>
+    </header>
+
+    <div class="page-content">
+        <main>
+            <section class="introduction">
+                <div class="img-container animate">
+                    <img class="pfp" src="./assets/imgs/perfil.png" alt="Foto de perfil ilustrativa de Arthur Santos">
+                </div>
+                <div class="info-container animate">
+                    <h1>Prazer, <span>Arthur Santos</span></h1>
+                    <h2 data-anima-texto>Desenvolvedor Web</h2>
+                    <div class="btn-container">
+                        <a class="botao-contato btn-gradient">
+                            Download C/V
+                        </a>
+                        <a href="https://www.linkedin.com/in/arthur-santos-3b61a8267/" target="_blank" class="botao-contato" id="gradient-hover">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="conteudo" id="about" data-animar>
+            <h2 class="heading">Sobre Mim</h2>
+            <p>
+                Meu nome é Arthur Santos, fã de video-games e
+                fascinado por tecnologia; Programador com experiência
+                em HTML, CSS, JavaScript, TypeScript e Python;
+                Meu primeiro contato com programação foi aos 14 anos,
+                porém só comecei a focar nessa área aos 16 anos, quando
+                entrei para o curso de Informática Para Internet na
+                <abbr title="Fundação Instituto de Educação de Barueri">FIEB</abbr>;
+            </p>
+             <p>
+                Apesar de meu foco estar mais direcionado a programação, eu também possuo
+                conhecimento básico de web-design, e em ferramentas
+                como Axure e Figma;
+            </p>
+        </section>
+        
+        <section class="conteudo" id="skills" data-animar>
+            <h2 class="heading">Conhecimentos</h2>
+            <div class="flexible-container">
+                <div class="icon-container">    
+                <i class="devicon-html5-plain"></i>
+                    <h4>html5 <br> 95&#37;</h4>
+                </div>
+                <div class="icon-container">                   
+                <i class="devicon-css3-plain"></i>      
+                    <h4>css3 <br> 80&#37;</h4>
+                </div>
+                <div class="icon-container">
+                    <i class="devicon-javascript-plain"></i>
+                    <h4>javascript <br> 55&#37;</h4>
+                </div>
+                <div class="icon-container">
+                    <i class="devicon-typescript-plain"></i>
+                    <h4>typescript <br> 50&#37;</h4>
+                </div>
+                <div class="icon-container">    
+                    <i class="devicon-bootstrap-plain"></i>
+                    <h4>bootstrap <br> 20&#37;</h4>
+                </div>
+                <div class="icon-container">
+                    <i class="devicon-nodejs-plain"></i>
+                    <h4>nodejs <br> 55&#37;</h4>
+                </div>
+                <div class="icon-container">
+                    <i class="fa-brands fa-python"></i>
+                    <h4>python3 <br> 40&#37;</h4>
+                </div>
+                <div class="icon-container">          
+                    <i class="devicon-figma-plain"></i>   
+                    <h4>figma <br> 10&#37;</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo" id="projects" data-animar>
+            <h2 class="heading">Projetos</h2>
+        
+            <div class="slider-projetos">
+                <i class="fa-solid fa-circle-arrow-left arrow-btn-left"></i>
+                <i class="fa-solid fa-circle-arrow-right arrow-btn-right"></i>
+
+                <div 
+                class="project-container active-right"
+                style="background-image: url('./index_assets/imgs/bg-slider.png');">
+                    <div class="link-container">
+                        <a href="https://github.com/xDef4lt/background-slider"  target="_blank" class="botao-link">Acessar código</a>
+                        <a href="./projetos/bg-slider/index.html" target="_blank" class="botao-link">Acessar página</a>
+                    </div>
+                </div>
+
+                <div 
+                class="project-container"
+                style="background-image: url('./index_assets/imgs/relogio.png');">
+                    <div class="link-container">
+                        <a href="https://github.com/xDef4lt/relogio"  target="_blank" class="botao-link">Acessar código</a>
+                        <a href="./projetos/relogio-digital/index.html" target="_blank" class="botao-link">Acessar página</a>
+                    </div>
+                </div>
+
+                <div 
+                class="project-container"
+                style="background-image: url('./index_assets/imgs/previsao.png');">
+                    <div class="link-container">
+                        <a href="https://github.com/xDef4lt/previsao-do-tempo"  target="_blank" class="botao-link">Acessar código</a>
+                        <a href="./projetos/previsao-tempo/index.html" target="_blank" class="botao-link">Acessar página</a>
+                    </div>
+                </div>
+
+                <div 
+                class="project-container"
+                style="background-image: url('./index_assets/imgs/slider-js.png');">
+                    <div class="link-container">
+                        <a href="https://github.com/xDef4lt/slider-js"  target="_blank" class="botao-link">Acessar código</a>
+                        <a href="./projetos/slider-js/index.html" target="_blank" class="botao-link">Acessar página</a>
+                    </div>
+                </div>
+
+                <div 
+                class="project-container"
+                style="background-image: url('./index_assets/imgs/prof-card.png');">
+                    <div class="link-container">
+                        <a href="https://github.com/xDef4lt/profile-card"  target="_blank" class="botao-link">Acessar código</a>
+                        <a href="./projetos/profile-card/index.html" target="_blank" class="botao-link">Acessar página</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="conteudo" id="services" data-animar>
+            <h2 class="heading">Serviços</h2>
+
+            <div class="slider">
+                <article class="slide active">
+                    <img src="./assets/svgs/programming.svg" class="dev-icon" alt="Dev Icon">
+                    <h3>Criação de Websites</h3>
+                    <p>
+                        Design e construção de
+                        páginas de sites
+                    </p>
+                </article>
+
+                <article>
+                    <img src="./assets/svgs/maintance.svg" class="dev-icon" alt="Dev Icon">
+                    <h3>Manutenção em Websites</h3>
+                    <p>
+                        Manutenção e implementação
+                        de novas funcionalidades
+                        em websites
+                    </p>
+                </article>
+
+                <article>
+                    <img src="./assets/svgs/responsive.svg" class="dev-icon" alt="Cellphone Icon">
+                    <h3>Sites Responsivos</h3>
+                    <p>
+                        Implementação de websites responsivos
+                    </p>
+                </article>
+                
+            </div>
+        </section>
+
+        <footer id="contacts">
+            <div class="social">
+                <img src="./assets/svgs/github.svg" class="lang-icon" alt="Logo Github">
+                <img src="./assets/svgs/linkedin.svg" class="lang-icon" alt="Logo LinkedIn">
+            </div>
+            
+        </footer>
+    </div>
+
+    <div class="back-top-btn hidden">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <div class="music-btn">
+        <img src="./assets/imgs/music.gif" alt="Personagem de anime ouvindo música">
+    </div>
+
+    <!--Scripts-->
+    <script type="module" src="./components/scripts/script.js"></script>
+</body>
+</html>

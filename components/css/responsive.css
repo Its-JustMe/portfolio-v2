@@ -1,0 +1,59 @@
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 880px) {
+    .mobile-menu {
+        width: 5em;
+        font-size: .8em;
+        position: fixed;
+            left: 1.5em;
+
+        display: block;
+
+        cursor: pointer;
+        transition: all .6s;
+    }
+
+    header.active {
+        height: 99%;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    main {
+        height: 800px;
+    }
+
+    .info-container {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .info-container > h2 {
+        margin: auto;
+    }
+
+    .menu {
+        height: 0;
+        transition: display .2s;
+    }
+
+    .menu.active {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+
+        margin-left: 2em;
+
+        width: auto;
+        height: auto;
+        font-size: 1.6em;
+
+    }
+
+    .info-container > h1, .info-container > h2 {
+        text-align: center;
+    }
+}

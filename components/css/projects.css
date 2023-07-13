@@ -1,0 +1,126 @@
+i {
+    font-size: 4em;
+    z-index: 2;
+    transition: all .5s;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: var(--gradient-theme);
+}
+
+.slider-projetos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.project-container.active-right, .project-container.active-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+} 
+.project-container.active-left {
+    animation: slideLeft .8s;
+}
+.project-container.active-right {
+    animation: slideRight .8s;
+}
+.project-container {
+    width: clamp(70vw, 37.5em, 22.5em);
+    height: 350px;
+    overflow: hidden;
+    background-size: cover;
+
+    display: none;
+
+    border: 2px solid transparent;
+    border-image: var(--gradient-theme-reverse) 10;
+
+    position: relative;
+
+    transition: all .5s;
+}
+.link-container {
+    visibility: hidden;
+    transition: all .6s;
+    transform: translateY(100px);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    width: 100%;
+}
+
+.project-container:hover .link-container {
+    visibility: visible;
+    transform: translateY(0);
+    background-color: #0000009e;
+}
+
+.botao-link:before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    width: 0;
+    height: 100%;
+
+    background-image: var(--gradient-theme);
+    transition: all .5s;
+}
+.botao-link:hover:before {
+    width: 100%;
+}
+
+.link-container > .botao-link {
+    width: 130px;
+    text-align: center;
+
+    position: relative;
+
+    padding: 5px;
+
+    border-radius: 2em;
+    cursor: pointer;
+
+    font-size: 1.3em;
+    font-weight: bolder;
+
+    color: var(--primary-color);
+    background: transparent;
+    border: 2px solid var(--primary-color);
+}
+i.arrow-btn-right {
+    position: absolute;
+        top: 40%;
+        right: clamp(3.3vw, 1.5em, .5em);
+    transform: translateY(8px); 
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+i.arrow-btn-left {
+    position: absolute;
+        top: 40%;
+        left: clamp(3.3vw, 1.5em, .5em);
+    transform: translateY(8px); 
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+i.arrow-btn-left:hover, i.arrow-btn-right:hover {
+    font-size: 4.5em;
+    filter: drop-shadow(3px 6px 7px #d4a7f873);
+}
