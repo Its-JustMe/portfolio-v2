@@ -49,13 +49,13 @@ export class Slider {
      */
     slideHandler() {
         let slide_atual = 0;
-        this.arrow_right.addEventListener('click', () => {
+        this.getArrowRight.addEventListener('click', () => {
             slide_atual++;
             slide_atual = slide_atual > this.slides.length - 1 ? 0 : slide_atual;
             this.clearSlides();
             this.nextSlide(slide_atual);
         });
-        this.arrow_left.addEventListener('click', () => {
+        this.getArrowLeft.addEventListener('click', () => {
             slide_atual--;
             slide_atual = slide_atual < 0 ? this.slides.length - 1 : slide_atual;
             this.clearSlides();

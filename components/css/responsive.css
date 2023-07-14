@@ -8,6 +8,7 @@
         font-size: .8em;
         position: fixed;
             left: 1.5em;
+            top: 1em;
 
         display: block;
 
@@ -15,10 +16,17 @@
         transition: all .6s;
     }
 
+    .mobile-menu.active {
+        transform: rotate(0deg, 90deg);
+    }
+
     header.active {
-        height: 99%;
+        height: 100%;
         align-items: center;
         overflow: hidden;
+
+        background-color: #0000005e;
+        backdrop-filter: blur(8px);
     }
 
     main {

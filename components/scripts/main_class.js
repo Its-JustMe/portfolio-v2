@@ -39,4 +39,38 @@ export class Page {
             back_top_btn.classList.add('hidden');
         }
     }
+    changeNavbarOnScroll(header) {
+        const current_scroll = window.scrollY;
+        if (current_scroll > 150) {
+            header.classList.remove('hidden');
+            header.classList.add('shown');
+        }
+        if (current_scroll === 0) {
+            header.classList.remove('hidden');
+            header.classList.remove('shown');
+        }
+    }
+    // Métodos da Interface
+    showHideMobileMenu(menu_btn) {
+        const navbar = document.querySelector('.menu');
+        const menu_items = document.querySelectorAll('.menu-item');
+        const header = document.querySelector('header');
+        if (menu_btn.classList.contains('active')) {
+            menu_btn.classList.remove('active');
+            navbar.classList.remove('active');
+            header.classList.remove('active');
+        }
+        else {
+            menu_btn.classList.add('active');
+            navbar.classList.add('active');
+            header.classList.add('active');
+        }
+        for (let i = 0; i < menu_items.length; i++) {
+            menu_items[i].onclick = function () {
+                menu_btn.classList.remove('active');
+                navbar.classList.remove('active');
+                header.classList.remove('active');
+            };
+        }
+    }
 }

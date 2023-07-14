@@ -1,8 +1,8 @@
 interface ResponsiveMethods {
-    showHideMobileMenu: () => void;
+    showHideMobileMenu: (menu_btn: HTMLDivElement) => void;
 }
 
-export class Page {
+export class Page implements ResponsiveMethods {
     private animated_sections: HTMLElement[];
 
     constructor (sections: HTMLElement[]) {
@@ -51,5 +51,45 @@ export class Page {
         }
     }
 
+    public changeNavbarOnScroll (header: HTMLElement): void {
+        const current_scroll = window.scrollY;
+        
+        if (current_scroll > 150) {
+            header.classList.remove('hidden');
+            header.classList.add('shown');
+        } if (current_scroll === 0) {
+            header.classList.remove('hidden');
+            header.classList.remove('shown');
+        }
+    }
+
     // Métodos da Interface
+
+    public showHideMobileMenu(menu_btn: HTMLDivElement): void {
+        const navbar: HTMLElement = document.querySelector('.menu') as HTMLElement;
+        const menu_items: HTMLLIElement[] = document.querySelectorAll('.menu-item') as unknown as HTMLLIElement[];
+        const header: HTMLElement = document.querySelector('header') as HTMLElement;
+        
+        if (menu_btn.classList.contains('active')) {
+            menu_btn.classList.remove('active');
+            
+            navbar.classList.remove('active');
+            header.classList.remove('active');
+        } else {
+            menu_btn.classList.add('active');
+        
+            navbar.classList.add('active');
+            header.classList.add('active');
+        }
+        
+        for (let i = 0; i < menu_items.length; i++) {
+            menu_items[i].onclick = function() {
+                menu_btn.classList.remove('active');
+            
+                navbar.classList.remove('active');
+                header.classList.remove('active');
+            };
+        }
+    }
+    
 }

@@ -4,6 +4,7 @@ import { Page } from "./main_class";
 (() => {
     window.addEventListener('DOMContentLoaded', function () {
         const $data_animate_elements: HTMLElement[] = document.querySelectorAll('[data-animar]') as unknown as HTMLElement[];
+        const $header: HTMLElement = document.querySelector('header') as HTMLElement;
 
         const portfolio_page: Page = new Page($data_animate_elements);
 
@@ -16,7 +17,10 @@ import { Page } from "./main_class";
 
             portfolio_page.showScrollTopBtn($back_top_btn);
 
+            portfolio_page.changeNavbarOnScroll($header);
+
             $back_top_btn.addEventListener('click', portfolio_page.scrollToTop);
+
         });
 
         const $slider_projects: HTMLDivElement[] = document.querySelectorAll('.project-container') as unknown as HTMLDivElement[];
@@ -26,5 +30,9 @@ import { Page } from "./main_class";
         const slider: Slider = new Slider($slider_projects, $arrow_left, $arrow_right);
 
         slider.slideHandler();
+
+        const $mobile_menu_btn: HTMLDivElement = document.querySelector('.mobile-menu') as HTMLDivElement;
+
+        $mobile_menu_btn.addEventListener('click', () => portfolio_page.showHideMobileMenu($mobile_menu_btn));
     });
 })();
