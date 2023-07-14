@@ -118,6 +118,9 @@ main {
 h3 {
     background-image: var(--gradient-theme-reverse);
 }
+a > span {
+    color: var(--secondary-color);
+}
 
 .my-logo-container {
     position: fixed;
