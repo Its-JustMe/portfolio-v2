@@ -1,8 +1,12 @@
 import { Slider } from "./class_slider";
 import { Page } from "./main_class";
+import { updateAge } from "./module";
 
 (() => {
     window.addEventListener('DOMContentLoaded', function () {
+        const $age: HTMLSpanElement = document.querySelector('span#age') as HTMLSpanElement;
+        $age.textContent = `${updateAge()}`;
+
         const $data_animate_elements: NodeListOf<HTMLDataElement> = document.querySelectorAll('[data-animar]') as NodeListOf<HTMLDataElement>;
         const $header: HTMLElement = document.querySelector('header') as HTMLElement;
         const portfolio_page: Page = new Page($data_animate_elements)

@@ -1,7 +1,10 @@
 import { Slider } from "./class_slider.js";
 import { Page } from "./main_class.js";
+import { updateAge } from "./module.js";
 (() => {
     window.addEventListener('DOMContentLoaded', function () {
+        const $age = document.querySelector('span#age');
+        $age.textContent = `${updateAge()}`;
         const $data_animate_elements = document.querySelectorAll('[data-animar]');
         const $header = document.querySelector('header');
         const portfolio_page = new Page($data_animate_elements);
