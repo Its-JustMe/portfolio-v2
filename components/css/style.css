@@ -165,3 +165,11 @@ h3 {
     display: inline-flex;
     gap: 1.5em;
 }
+
+li > a[tabindex]:focus {
+    outline: #50abf7 solid 2px;
+}
+
+[tabindex]:focus {
+    outline: #50abf7 solid 2px;
+}

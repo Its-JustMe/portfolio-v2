@@ -34,10 +34,10 @@
         
         <nav class="menu-wrap">
             <ul class="menu">
-                <li class="menu-item"><a href="#about">Sobre</a></li>
-                <li class="menu-item"><a href="#skills">Conhecimentos</a></li>
-                <li class="menu-item"><a href="#projects">Projetos</a></li>
-                <li class="menu-item"><a href="#services">Serviços</a></li>
+                <li class="menu-item" tabindex="0"><a href="#about">Sobre</a></li>
+                <li class="menu-item" tabindex="0"><a href="#skills">Conhecimentos</a></li>
+                <li class="menu-item" tabindex="0"><a href="#projects">Projetos</a></li>
+                <li class="menu-item" tabindex="0"><a href="#services">Serviços</a></li>
             </ul>
         </nav>
 
@@ -56,10 +56,10 @@
                     <h1>Prazer, <span>Arthur Santos</span></h1>
                     <h2 data-anima-texto>Desenvolvedor Web</h2>
                     <div class="btn-container">
-                        <a class="botao-contato btn-gradient">
+                        <a href="#" class="botao-contato btn-gradient" tabindex="1">
                             Download C/V
                         </a>
-                        <a href="https://www.linkedin.com/in/arthur-santos-3b61a8267/" target="_blank" class="botao-contato" id="gradient-hover">
+                        <a href="https://www.linkedin.com/in/arthur-santos-3b61a8267/" target="_blank" class="botao-contato" id="gradient-hover" tabindex="1">
                             LinkedIn
                         </a>
                     </div>
@@ -88,35 +88,35 @@
         <section class="conteudo" id="skills" data-animar>
             <h2 class="heading">Conhecimentos</h2>
             <div class="flexible-container">
-                <div class="icon-container">    
+                <div class="icon-container" tabindex="1">    
                 <i class="devicon-html5-plain"></i>
                     <h4>html5 <br> 95&#37;</h4>
                 </div>
-                <div class="icon-container">                   
+                <div class="icon-container" tabindex="1">                   
                 <i class="devicon-css3-plain"></i>      
                     <h4>css3 <br> 80&#37;</h4>
                 </div>
-                <div class="icon-container">
+                <div class="icon-container" tabindex="1">
                     <i class="devicon-javascript-plain"></i>
                     <h4>javascript <br> 65&#37;</h4>
                 </div>
-                <div class="icon-container">
+                <div class="icon-container" tabindex="1">
                     <i class="devicon-typescript-plain"></i>
                     <h4>typescript <br> 50&#37;</h4>
                 </div>
-                <div class="icon-container">    
+                <div class="icon-container" tabindex="1">    
                     <i class="devicon-bootstrap-plain"></i>
                     <h4>bootstrap <br> 20&#37;</h4>
                 </div>
-                <div class="icon-container">
+                <div class="icon-container" tabindex="1">
                     <i class="devicon-nodejs-plain"></i>
                     <h4>nodejs <br> 55&#37;</h4>
                 </div>
-                <div class="icon-container">
+                <div class="icon-container" tabindex="1">
                     <i class="fa-brands fa-python"></i>
                     <h4>python3 <br> 40&#37;</h4>
                 </div>
-                <div class="icon-container">          
+                <div class="icon-container" tabindex="1">          
                     <i class="devicon-figma-plain"></i>   
                     <h4>figma <br> 10&#37;</h4>
                 </div>
@@ -127,8 +127,8 @@
             <h2 class="heading">Projetos</h2>
         
             <div class="slider-projetos">
-                <i class="fa-solid fa-circle-arrow-left arrow-btn-left"></i>
-                <i class="fa-solid fa-circle-arrow-right arrow-btn-right"></i>
+                <i class="fa-solid fa-circle-arrow-left arrow-btn-left" tabindex="1"></i>
+                <i class="fa-solid fa-circle-arrow-right arrow-btn-right" tabindex="1"></i>
                 <!--
                 <div 
                 class="project-container active-right"
@@ -219,9 +219,9 @@
         </footer>
     </div>
 
-    <div class="back-top-btn hidden">
+    <button class="back-top-btn hidden" tabindex="0">
         <i class="fa-solid fa-arrow-up"></i>
-    </div>
+    </button>
 
     <!--Scripts-->
     <script type="module" src="./components/scripts/script.js"></script>
