@@ -10,6 +10,16 @@ export class Page {
         this.animated_sections = sections;
     }
     // Métodos da Classe
+    activateScrollAnimations() {
+        const data_animate = this.getDataAnimate;
+        for (let i = 0; i < data_animate.length; i++) {
+            const current_element = data_animate[i];
+            current_element.setAttribute('data-animar', 'true');
+        }
+    }
+    /** Função que ativa uma animação de transição aos elementos conforme o usuário rola a página
+     * @param animation Nome da classe da animação a ser ativada/removida
+    */
     animateOnScroll(animation) {
         const top_section = window.scrollY + (window.innerHeight * 3) / 4;
         this.getDataAnimate.forEach(function (element) {

@@ -3,15 +3,18 @@ import { Page } from "./main_class";
 
 (() => {
     window.addEventListener('DOMContentLoaded', function () {
-        const $data_animate_elements: HTMLElement[] = document.querySelectorAll('[data-animar]') as unknown as HTMLElement[];
+        const $data_animate_elements: NodeListOf<HTMLDataElement> = document.querySelectorAll('[data-animar]') as NodeListOf<HTMLDataElement>;
         const $header: HTMLElement = document.querySelector('header') as HTMLElement;
+        const portfolio_page: Page = new Page($data_animate_elements)
 
-        const portfolio_page: Page = new Page($data_animate_elements);
+        console.log(portfolio_page);
+
+        portfolio_page.activateScrollAnimations();
 
         this.document.addEventListener('scroll', function () {
             const animation: string = 'animar';
             
-            const $back_top_btn: HTMLDivElement = document.querySelector('.back-top-btn') as HTMLDivElement;
+            const $back_top_btn: HTMLButtonElement = document.querySelector('button.back-top-btn') as HTMLButtonElement;
 
             portfolio_page.animateOnScroll(animation);
 
@@ -23,15 +26,15 @@ import { Page } from "./main_class";
 
         });
 
-        const $slider_projects: HTMLDivElement[] = document.querySelectorAll('.project-container') as unknown as HTMLDivElement[];
-        const $arrow_left: HTMLDivElement = document.querySelector('.arrow-btn-left') as HTMLDivElement;
-        const $arrow_right: HTMLDivElement = document.querySelector('.arrow-btn-right') as HTMLDivElement;
+        const $slider_projects: NodeListOf<HTMLDivElement> = document.querySelectorAll('.project-container') as NodeListOf<HTMLDivElement>;
+        const $arrow_left: HTMLButtonElement = document.querySelector('button.arrow-btn-left') as HTMLButtonElement;
+        const $arrow_right: HTMLButtonElement = document.querySelector('button.arrow-btn-right') as HTMLButtonElement;
 
         const slider: Slider = new Slider($slider_projects, $arrow_left, $arrow_right);
 
         slider.slideHandler();
 
-        const $mobile_menu_btn: HTMLDivElement = document.querySelector('.mobile-menu') as HTMLDivElement;
+        const $mobile_menu_btn: HTMLButtonElement = document.querySelector('button.mobile-menu') as HTMLButtonElement;
 
         $mobile_menu_btn.addEventListener('click', () => portfolio_page.showHideMobileMenu($mobile_menu_btn));
     });

@@ -11,13 +11,16 @@
     transform: rotate(90deg);
 }
 
-[data-animar].animar {
+[data-animar="true"].animar {
     animation: slideIn 0.8s;
     opacity: 1;
 }
-[data-animar] {
+[data-animar="true"] {
     opacity: 0;
     transition: 0.8s;
+}
+[data-animar="false"] {
+    opacity: 1;
 }
 
 

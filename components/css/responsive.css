@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 48em) {
     .mobile-menu {
         width: 5em;
         font-size: .8em;
@@ -11,6 +11,8 @@
             top: 1em;
 
         display: block;
+
+        background: none;
 
         cursor: pointer;
         transition: all .6s;

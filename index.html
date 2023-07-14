@@ -28,9 +28,9 @@
 </head>
 <body>    
     <header>
-        <div class="mobile-menu">
+        <button class="mobile-menu">
             <i class="fa-solid fa-bars"></i>
-        </div>
+        </button>
         
         <nav class="menu-wrap">
             <ul class="menu">
@@ -67,7 +67,7 @@
             </section>
         </main>
 
-        <section class="conteudo" id="about" data-animar>
+        <section class="conteudo" id="about" data-animar="false">
             <h2 class="heading">Sobre Mim</h2>
             <p>
                 Meu nome é Arthur Santos, fã de video-games e
@@ -85,7 +85,7 @@
             </p>
         </section>
         
-        <section class="conteudo" id="skills" data-animar>
+        <section class="conteudo" id="skills" data-animar="false">
             <h2 class="heading">Conhecimentos</h2>
             <div class="flexible-container">
                 <div class="icon-container" tabindex="1">    
@@ -123,13 +123,17 @@
             </div>
         </section>
 
-        <section class="conteudo" id="projects" data-animar>
+        <section class="conteudo" id="projects" data-animar="false">
             <h2 class="heading">Projetos</h2>
         
             <div class="slider-projetos">
-                <i class="fa-solid fa-circle-arrow-left arrow-btn-left" tabindex="1"></i>
-                <i class="fa-solid fa-circle-arrow-right arrow-btn-right" tabindex="1"></i>
-                <!--
+                <button class="arrow-btn-left">
+                    <i class="fa-solid fa-circle-arrow-left arrow-btn-left" tabindex="1"></i>
+                </button>
+                <button class="arrow-btn-right">
+                    <i class="fa-solid fa-circle-arrow-right arrow-btn-right" tabindex="1"></i>
+                </button>
+                
                 <div 
                 class="project-container active-right"
                 style="background-image: url('./index_assets/imgs/bg-slider.png');">
@@ -174,10 +178,10 @@
                         <a href="./projetos/profile-card/index.html" target="_blank" class="botao-link">Acessar página</a>
                     </div>
                 </div>
-            </div>-->
+            </div>
         </section>
         
-        <section class="conteudo" id="services" data-animar>
+        <section class="conteudo" id="services" data-animar="false">
             <h2 class="heading">Serviços</h2>
 
             <div class="slider">

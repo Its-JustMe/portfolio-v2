@@ -1,24 +1,36 @@
 interface ResponsiveMethods {
-    showHideMobileMenu: (menu_btn: HTMLDivElement) => void;
+    showHideMobileMenu: (menu_btn: HTMLButtonElement) => void;
 }
 
 export class Page implements ResponsiveMethods {
-    private animated_sections: HTMLElement[];
+    private animated_sections: NodeListOf<HTMLDataElement>;
 
-    constructor (sections: HTMLElement[]) {
+    constructor (sections: NodeListOf<HTMLDataElement>) {
         this.animated_sections = sections;
     }
 
     // Getters e Setters
-    public get getDataAnimate (): HTMLElement[] {
+    public get getDataAnimate (): NodeListOf<HTMLDataElement> {
         return this.animated_sections;
     }
-    public set setDataAnimate (sections: HTMLElement[]) {
+    public set setDataAnimate (sections: NodeListOf<HTMLDataElement>) {
         this.animated_sections = sections;
     }
 
     // Métodos da Classe
 
+    public activateScrollAnimations (): void {
+        const data_animate: NodeListOf<HTMLDataElement> = this.getDataAnimate;
+
+        for (let i: number = 0; i < data_animate.length; i++) {
+            const current_element: HTMLDataElement = data_animate[i];
+            current_element.setAttribute('data-animar', 'true');
+        }
+    }
+
+    /** Função que ativa uma animação de transição aos elementos conforme o usuário rola a página 
+     * @param animation Nome da classe da animação a ser ativada/removida
+    */
     public animateOnScroll (animation: string): void {
         const top_section: number = window.scrollY + (window.innerHeight * 3) / 4;
 
@@ -39,7 +51,7 @@ export class Page implements ResponsiveMethods {
     /** Função que mostra o botão de voltar ao topo na tela
      * @param back_top_btn Elemento do botão
     */
-    public showScrollTopBtn (back_top_btn: HTMLDivElement): void {
+    public showScrollTopBtn (back_top_btn: HTMLButtonElement): void {
         const position_scroll: number = window.scrollY;
 
         if (position_scroll > 200) {
@@ -65,9 +77,9 @@ export class Page implements ResponsiveMethods {
 
     // Métodos da Interface
 
-    public showHideMobileMenu(menu_btn: HTMLDivElement): void {
+    public showHideMobileMenu(menu_btn: HTMLButtonElement): void {
         const navbar: HTMLElement = document.querySelector('.menu') as HTMLElement;
-        const menu_items: HTMLLIElement[] = document.querySelectorAll('.menu-item') as unknown as HTMLLIElement[];
+        const menu_items: NodeListOf<HTMLLIElement> = document.querySelectorAll('.menu-item') as NodeListOf<HTMLLIElement>;
         const header: HTMLElement = document.querySelector('header') as HTMLElement;
         
         if (menu_btn.classList.contains('active')) {

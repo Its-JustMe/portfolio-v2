@@ -1,33 +1,33 @@
 export class Slider {
-    private slides: HTMLDivElement[];
+    private slides: NodeListOf<HTMLDivElement>;
 
-    private arrow_left: HTMLDivElement;
-    private arrow_right: HTMLDivElement;
+    private arrow_left: HTMLButtonElement;
+    private arrow_right: HTMLButtonElement;
     
-    constructor (slides: HTMLDivElement[], arrL: HTMLDivElement, arrR: HTMLDivElement) {
+    constructor (slides: NodeListOf<HTMLDivElement>, arrL: HTMLButtonElement, arrR: HTMLButtonElement) {
         this.slides = slides;
         this.arrow_left = arrL;
         this.arrow_right = arrR;
     }
 
     // Getters e Setters
-    public get getSlider (): HTMLDivElement[] {
+    public get getSlider (): NodeListOf<HTMLDivElement> {
         return this.slides;
     }
-    public get getArrowLeft (): HTMLDivElement {
+    public get getArrowLeft (): HTMLButtonElement {
         return this.arrow_left;
     }
-    public get getArrowRight (): HTMLDivElement {
+    public get getArrowRight (): HTMLButtonElement {
         return this.arrow_right;
     }
 
-    public set setSlider (slider: HTMLDivElement[]) {
+    public set setSlider (slider: NodeListOf<HTMLDivElement>) {
         this.slides = slider;
     }
-    public set setArrowLeft (arrL: HTMLDivElement) {
+    public set setArrowLeft (arrL: HTMLButtonElement) {
         this.arrow_left = arrL;
     }
-    public set setArrowRight (arrR: HTMLDivElement) {
+    public set setArrowRight (arrR: HTMLButtonElement) {
         this.arrow_right = arrR;
     }
 
