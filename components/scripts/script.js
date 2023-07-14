@@ -1,5 +1,5 @@
-import { Slider } from "./class_slider";
-import { Page } from "./main_class";
+import { Slider } from "./class_slider.js";
+import { Page } from "./main_class.js";
 (() => {
     window.addEventListener('DOMContentLoaded', function () {
         const $data_animate_elements = document.querySelectorAll('[data-animar]');
