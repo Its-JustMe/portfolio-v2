@@ -1,4 +1,10 @@
+/** Classe responsável por conter elementos e métodos do Slider da página */
 export class Slider {
+    /** Construtor da Classe
+     * @param slides Array contendo os elementos do Slider
+     * @param arrL Botão de voltar um slide
+     * @param arrR Botão de avançar um slide
+    */
     constructor(slides, arrL, arrR) {
         this.slides = slides;
         this.arrow_left = arrL;
@@ -45,8 +51,7 @@ export class Slider {
     previousSlide(index_slide) {
         this.slides[index_slide].classList.add('active-left');
     }
-    /** Função responsável pelas interações com o Slider
-     */
+    /** Função responsável pelas interações com o Slider*/
     slideHandler() {
         let slide_atual = 0;
         this.getArrowRight.addEventListener('click', () => {

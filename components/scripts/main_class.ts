@@ -1,15 +1,24 @@
+/** Interface que contém métodos para responsividade da página */
 interface ResponsiveMethods {
+    /** Função que mostra/esconde o menu mobile da página 
+     * @param menu_btn Botão do menu mobile
+    */
     showHideMobileMenu: (menu_btn: HTMLButtonElement) => void;
 }
 
+/** Classe principal do projeto, que contém métodos e atributos da página em geral */
 export class Page implements ResponsiveMethods {
     private animated_sections: NodeListOf<HTMLDataElement>;
 
+    /** Construtor da classe 
+     * @param sections Array de seções que serão animadas na página
+    */
     constructor (sections: NodeListOf<HTMLDataElement>) {
         this.animated_sections = sections;
     }
 
     // Getters e Setters
+
     public get getDataAnimate (): NodeListOf<HTMLDataElement> {
         return this.animated_sections;
     }
@@ -19,6 +28,7 @@ export class Page implements ResponsiveMethods {
 
     // Métodos da Classe
 
+    /** Função que ativa o atributo de animações das seções */
     public activateScrollAnimations (): void {
         const data_animate: NodeListOf<HTMLDataElement> = this.getDataAnimate;
 
@@ -63,6 +73,10 @@ export class Page implements ResponsiveMethods {
         }
     }
 
+
+    /**Função que muda a classe da navbar quando o usuário rola a página
+     * @param header Cabeçalho/navbar
+     */
     public changeNavbarOnScroll (header: HTMLElement): void {
         const current_scroll = window.scrollY;
         

@@ -1,9 +1,15 @@
+/** Classe responsável por conter elementos e métodos do Slider da página */
 export class Slider {
     private slides: NodeListOf<HTMLDivElement>;
 
     private arrow_left: HTMLButtonElement;
     private arrow_right: HTMLButtonElement;
     
+    /** Construtor da Classe 
+     * @param slides Array contendo os elementos do Slider
+     * @param arrL Botão de voltar um slide
+     * @param arrR Botão de avançar um slide
+    */
     constructor (slides: NodeListOf<HTMLDivElement>, arrL: HTMLButtonElement, arrR: HTMLButtonElement) {
         this.slides = slides;
         this.arrow_left = arrL;
@@ -11,6 +17,7 @@ export class Slider {
     }
 
     // Getters e Setters
+
     public get getSlider (): NodeListOf<HTMLDivElement> {
         return this.slides;
     }
@@ -55,8 +62,7 @@ export class Slider {
         this.slides[index_slide].classList.add('active-left');
     }
 
-    /** Função responsável pelas interações com o Slider
-     */
+    /** Função responsável pelas interações com o Slider*/
     public slideHandler (): void {
         let slide_atual = 0;
 

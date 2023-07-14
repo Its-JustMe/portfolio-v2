@@ -1,4 +1,8 @@
+/** Classe principal do projeto, que contém métodos e atributos da página em geral */
 export class Page {
+    /** Construtor da classe
+     * @param sections Array de seções que serão animadas na página
+    */
     constructor(sections) {
         this.animated_sections = sections;
     }
@@ -10,6 +14,7 @@ export class Page {
         this.animated_sections = sections;
     }
     // Métodos da Classe
+    /** Função que ativa o atributo de animações das seções */
     activateScrollAnimations() {
         const data_animate = this.getDataAnimate;
         for (let i = 0; i < data_animate.length; i++) {
@@ -49,6 +54,9 @@ export class Page {
             back_top_btn.classList.add('hidden');
         }
     }
+    /**Função que muda a classe da navbar quando o usuário rola a página
+     * @param header Cabeçalho/navbar
+     */
     changeNavbarOnScroll(header) {
         const current_scroll = window.scrollY;
         if (current_scroll > 150) {
