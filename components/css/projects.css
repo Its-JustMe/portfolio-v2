@@ -27,7 +27,6 @@ i {
     width: clamp(80vw, 37.5em, 22.5em);
     height: clamp(80vh, 450px, 400px);
     overflow: hidden;
-    background-size: cover;
 
     display: none;
 
