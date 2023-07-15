@@ -30,7 +30,7 @@ html {
     --heading-font: clamp(6vw, 3.75em, 2.18em);
     --subheading-font: clamp(4.5vw, 2.75em, 2em);
     --small-heading-font: clamp(3.5vw, 2.3em, 1.8em);
-    --text-font: clamp(2.3vw, 1.8em, 1.2em);
+    --text-font: clamp(2.5vw, 1.8em, 1.4em);
 
 }
 
