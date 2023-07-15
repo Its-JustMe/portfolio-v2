@@ -20,6 +20,8 @@ footer {
 .social > a > i {
     margin-top: .5em;
     padding: 6px;
+
+    font-size: var(--subheading-font);
 }
 
 .social > a:hover > i {
