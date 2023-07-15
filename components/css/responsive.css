@@ -1,8 +1,11 @@
 .mobile-menu {
     display: none;
 }
+.slider > button {
+    opacity: 0;
+}
 
-@media (max-width: 48em) {
+@media (max-width: 60em) {
     .mobile-menu {
         width: 5em;
         font-size: .8em;
@@ -65,5 +68,22 @@
 
     .info-container > h1, .info-container > h2 {
         text-align: center;
+    }
+
+    /* Slider */   
+
+    .slider > article {
+        display: none;
+    }
+
+    .slider > article.active-right, .slider > article.active-left {
+        display: block;
+
+        max-width: 600px;
+        min-width: 320px;
+    }
+
+    .slider > button {
+        opacity: 1;
     }
 }

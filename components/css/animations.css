@@ -5,6 +5,12 @@
 .img-container.animate {
     animation: slideRight 1.5s;
 }
+.active-left {
+    animation: slideLeft .8s;
+}
+.active-right {
+    animation: slideRight .8s;
+}
 
 /*Animação Menu Mobile*/
 .mobile-menu.active {

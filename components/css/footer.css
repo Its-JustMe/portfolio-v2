@@ -1,0 +1,36 @@
+footer {
+    border-top: 3px solid transparent;
+    border-image: var(--gradient-theme) 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+
+    width: 65%;
+    margin: auto;
+
+    z-index: 100;
+}
+.social {
+    display: inline-flex;
+    gap: 2em;
+}
+
+.social > a > i {
+    margin-top: .5em;
+    padding: 6px;
+}
+
+.social > a:hover > i {
+    color: var(--primary-theme-color);
+}
+.social > a:hover > i.fa-linkedin-in {
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+
+    color: var(--secondary-color);
+
+    background: var(--primary-theme-color);
+    border-radius: 8px;
+}

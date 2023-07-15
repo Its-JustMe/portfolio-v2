@@ -55,7 +55,7 @@
                     <h1>Prazer, <span>Arthur Santos</span></h1>
                     <h2 data-anima-texto>Desenvolvedor Web</h2>
                     <div class="btn-container">
-                        <a href="#" class="botao-contato btn-gradient" tabindex="1">
+                        <a href="#" class="botao-contato btn-gradient" tabindex="1" id="download-cv">
                             <span lang="en-us">Download</span> 
                             <abbr title="Currículo Virtual">C/V</abbr>
                         </a>
@@ -70,19 +70,28 @@
         <section class="conteudo" id="about" data-animar="false">
             <h2 class="heading">Sobre Mim</h2>
             <p>
-                Meu nome é Arthur Santos, tenho 
-                <span id="age" style="color: inherit">_</span> anos, fã de video-games e
-                fascinado por tecnologia; Programador com experiência
-                em HTML, CSS, JavaScript, TypeScript e Python;
-                Meu primeiro contato com programação foi aos 14 anos,
-                porém só comecei a focar nessa área aos 16 anos, quando
-                entrei para o curso de Informática Para Internet na
-                <abbr title="Fundação Instituto de Educação de Barueri">FIEB</abbr>;
+                Olá, eu sou Arthur Santos, tenho <span style="color: inherit" id="age">_</span> anos, sou um desenvolvedor web 
+                apaixonado por tecnologia e entusiasta de videogames; 
+                Tenho experiência em programação utilizando <strong>HTML, CSS, JavaScript, TypeScript e Python;</strong> 
+                Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 anos, quando ingressei no 
+                curso de Informática para Internet na <abbr title="Fundação Instituto de Educação de Barueri">FIEB</abbr>, 
+                que comecei a me dedicar a essa área de forma mais intensa;
             </p>
-             <p>
-                Apesar de meu foco estar mais direcionado a programação, eu também possuo
-                conhecimento básico de web-design, e em ferramentas
-                como Axure e Figma;
+            <p>
+                Embora meu foco principal seja a programação, também possuo conhecimentos 
+                básicos de web design e uso de ferramentas como Axure e Figma;
+            </p>
+            <p>
+                Nesta jornada, desenvolvi habilidades sólidas em diferentes tecnologias, 
+                incluindo HTML, CSS, JavaScript, TypeScript, Bootstrap, NodeJS e Python; 
+                Com essas habilidades, sou capaz de criar soluções web criativas e funcionais;
+            </p>
+            <p>
+                Estou sempre em busca de novos desafios e oportunidades para expandir meu conhecimento 
+                e contribuir para projetos emocionantes; Se você está procurando um desenvolvedor web 
+                apaixonado e comprometido, entre em contato comigo através do <strong>LinkedIn</strong> 
+                ou faça o download do meu currículo para saber mais sobre minha experiência e habilidades;
+                Estou ansioso para colaborar e transformar suas ideias em realidade!
             </p>
         </section>
         
@@ -129,15 +138,14 @@
         
             <div class="slider-projetos">
                 <button class="arrow-btn-left">
-                    <i class="fa-solid fa-circle-arrow-left arrow-btn-left" tabindex="1"></i>
+                    <i class="fa-solid fa-circle-arrow-left arrow-btn arrow-btn-left" tabindex="1"></i>
                 </button>
                 <button class="arrow-btn-right">
-                    <i class="fa-solid fa-circle-arrow-right arrow-btn-right" tabindex="1"></i>
+                    <i class="fa-solid fa-circle-arrow-right arrow-btn arrow-btn-right" tabindex="1"></i>
                 </button>
                 
-                <div 
-                class="project-container active-right"
-                style="background-image: url('./assets/imgs/projects_imgs/floricultura.png');">
+                <div class="project-container active-right">
+                    <img src="./assets/imgs/projects_imgs/floricultura.png" alt="Projeto 1: Floricultura">
                     <div class="link-container">
                         <a href="https://github.com/xDef4lt/floricultura"  target="_blank" class="botao-link">Acessar código</a>
                         <a href="https://xdef4lt.github.io/floricultura/" target="_blank" class="botao-link">Acessar página</a>
@@ -145,38 +153,36 @@
                 </div>
 
                 <div 
-                class="project-container"
-                style="background-image: url('./index_assets/imgs/relogio.png');">
+                class="project-container">
+                <img src="./assets/imgs/projects_imgs/slider.png" alt="Projeto 2: Background-Slider JS">
+                    <div class="link-container">
+                        <a href="https://github.com/xDef4lt/background-slider"  target="_blank" class="botao-link">Acessar código</a>
+                        <a href="https://background-slider-tawny.vercel.app/" target="_blank" class="botao-link">Acessar página</a>
+                    </div>
+                </div>
+
+                <div 
+                class="project-container">
+                <img src="./assets/imgs/projects_imgs/previsao-do-tempo.png" alt="Projeto 3: Previsão do Tempo">
+                    <div class="link-container">
+                        <a href="https://github.com/xDef4lt/previsaoDoTempo"  target="_blank" class="botao-link">Acessar código</a>
+                        <a href="https://previsao-do-tempo-jet.vercel.app/" target="_blank" class="botao-link">Acessar página</a>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <img src="./assets/imgs/projects_imgs/relogio.png" alt="Projeto 4: Relógio Digital">
                     <div class="link-container">
                         <a href="https://github.com/xDef4lt/relogio"  target="_blank" class="botao-link">Acessar código</a>
-                        <a href="./projetos/relogio-digital/index.html" target="_blank" class="botao-link">Acessar página</a>
+                        <a href="https://relogio-navy.vercel.app/" target="_blank" class="botao-link">Acessar página</a>
                     </div>
                 </div>
 
-                <div 
-                class="project-container"
-                style="background-image: url('./index_assets/imgs/previsao.png');">
+                <div class="project-container">
+                    <img src="./assets/imgs/projects_imgs/quimica-facil.png" alt="Projeto 5: QuímicaFácil">
                     <div class="link-container">
-                        <a href="https://github.com/xDef4lt/previsao-do-tempo"  target="_blank" class="botao-link">Acessar código</a>
-                        <a href="./projetos/previsao-tempo/index.html" target="_blank" class="botao-link">Acessar página</a>
-                    </div>
-                </div>
-
-                <div 
-                class="project-container"
-                style="background-image: url('./index_assets/imgs/slider-js.png');">
-                    <div class="link-container">
-                        <a href="https://github.com/xDef4lt/slider-js"  target="_blank" class="botao-link">Acessar código</a>
-                        <a href="./projetos/slider-js/index.html" target="_blank" class="botao-link">Acessar página</a>
-                    </div>
-                </div>
-
-                <div 
-                class="project-container"
-                style="background-image: url('./index_assets/imgs/prof-card.png');">
-                    <div class="link-container">
-                        <a href="https://github.com/xDef4lt/profile-card"  target="_blank" class="botao-link">Acessar código</a>
-                        <a href="./projetos/profile-card/index.html" target="_blank" class="botao-link">Acessar página</a>
+                        <a href="https://github.com/xDef4lt/quimicafacil"  target="_blank" class="botao-link">Acessar código</a>
+                        <a href="https://quimicafacil.vercel.app/" target="_blank" class="botao-link">Acessar página</a>
                     </div>
                 </div>
             </div>
@@ -186,7 +192,14 @@
             <h2 class="heading">Serviços</h2>
 
             <div class="slider">
-                <article class="slide active">
+                <button class="slider-btn left">
+                    <i class="fa-solid fa-circle-arrow-left" tabindex="1"></i>
+                </button>
+                <button class="slider-btn right">
+                    <i class="fa-solid fa-circle-arrow-right" tabindex="1"></i>
+                </button>
+
+                <article class="slide active-right">
                     <img src="./assets/svgs/programming.svg" class="dev-icon" alt="Dev Icon">
                     <h3>Criação de Websites</h3>
                     <p>
@@ -218,9 +231,11 @@
 
         <footer id="contacts">
             <div class="social">
-                
+                <a href="https://github.com/xDef4lt" target="_blank"><i class="fa-brands fa-github"></i></a>            
+                <a href="https://www.linkedin.com/in/arthur-santos-3b61a8267/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:contato.arthursantosdev@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>             
+                <a href="https://wa.link/n2camg" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>          
             </div>
-            
         </footer>
     </div>
 

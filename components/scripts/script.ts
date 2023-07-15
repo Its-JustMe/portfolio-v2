@@ -4,6 +4,9 @@ import { updateAge } from "./module";
 
 (() => {
     window.addEventListener('DOMContentLoaded', function () {
+        const $download_cv_btn: HTMLAnchorElement = document.querySelector('#download-cv') as HTMLAnchorElement;
+        $download_cv_btn.addEventListener('click', () => alert('Disponível em breve'));
+
         const $age: HTMLSpanElement = document.querySelector('span#age') as HTMLSpanElement;
         $age.textContent = `${updateAge()}`;
 
@@ -30,13 +33,21 @@ import { updateAge } from "./module";
 
         });
 
-        const $slider_projects: NodeListOf<HTMLDivElement> = document.querySelectorAll('.project-container') as NodeListOf<HTMLDivElement>;
+        const $projects: NodeListOf<HTMLDivElement> = document.querySelectorAll('.project-container') as NodeListOf<HTMLDivElement>;
         const $arrow_left: HTMLButtonElement = document.querySelector('button.arrow-btn-left') as HTMLButtonElement;
         const $arrow_right: HTMLButtonElement = document.querySelector('button.arrow-btn-right') as HTMLButtonElement;
 
-        const slider: Slider = new Slider($slider_projects, $arrow_left, $arrow_right);
+        const slider_projects: Slider = new Slider($projects, $arrow_left, $arrow_right);
 
-        slider.slideHandler();
+        slider_projects.slideHandler();
+
+        const $services: NodeListOf<HTMLDivElement> = document.querySelectorAll('.slider > article') as NodeListOf<HTMLDivElement>;
+        const $btn_left: HTMLButtonElement = document.querySelector('button.slider-btn.left') as HTMLButtonElement;
+        const $btn_right: HTMLButtonElement = document.querySelector('button.slider-btn.right') as HTMLButtonElement;
+
+        const slider_services: Slider = new Slider($services, $btn_left, $btn_right);
+
+        slider_services.slideHandler();
 
         const $mobile_menu_btn: HTMLButtonElement = document.querySelector('button.mobile-menu') as HTMLButtonElement;
 

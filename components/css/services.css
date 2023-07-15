@@ -9,6 +9,8 @@
 }
 
 .slider {
+    position: relative;
+
     padding: 4px;
     width: 100%;
 
@@ -20,7 +22,7 @@
 .slider > article {
     text-align: center;
 
-    flex-basis: 300px;
+    flex-basis: 10px;
     
     max-width: 480px;
     min-width: 300px;
@@ -36,16 +38,33 @@
 }
 
 .slider > article > h3 {
-    font-size: max(min(8vw, 3em), 1.5em);
+    font-size: var(--small-heading-font);
 }
 .slider > article > p {
     text-align: center;
-    font-size: max(min(8vw, 1.8em), 1.3em);
+    font-size: var(--text-font);
     padding: 5px;
 }
-
 .dev-icon {
     min-width: 90px;
     max-width: 140px;
     height: auto;
+}
+
+.slider > button {
+    position: absolute;
+    background: none;
+
+    cursor: pointer;
+}
+.slider > button:hover {
+    font-size: 1em;
+}
+.slider > button.left {
+    top: 40%;
+        left: 1em;
+}
+.slider > button.right {
+    top: 40%;
+        right: 1em;
 }
