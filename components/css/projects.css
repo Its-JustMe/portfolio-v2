@@ -25,7 +25,7 @@ i {
 } 
 .project-container {
     width: clamp(80vw, 37.5em, 22.5em);
-    height: clamp(80vh, 450px, 400px);
+    height: 360px;
     overflow: hidden;
 
     display: none;
