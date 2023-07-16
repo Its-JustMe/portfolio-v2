@@ -62,9 +62,9 @@
 }
 .slider > button.left {
     top: 40%;
-        left: 1em;
+        left: clamp(8vw, 2em, 1.5em);
 }
 .slider > button.right {
     top: 40%;
-        right: 1em;
+        right: clamp(8vw, 2em, 1.5em);
 }
