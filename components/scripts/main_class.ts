@@ -1,6 +1,9 @@
-/** Interface que contém métodos para responsividade da página */
+/** 
+ * Interface que contém métodos para responsividade da página 
+*/
 interface ResponsiveMethods {
-    /** Função que mostra/esconde o menu mobile da página 
+    /** 
+     * Função que mostra/esconde o menu mobile da página 
      * @param menu_btn Botão do menu mobile
     */
     showHideMobileMenu: (menu_btn: HTMLButtonElement) => void;
@@ -10,7 +13,8 @@ interface ResponsiveMethods {
 export class Page implements ResponsiveMethods {
     private animated_sections: NodeListOf<HTMLDataElement>;
 
-    /** Construtor da classe 
+    /** 
+     * Construtor da classe 
      * @param sections Array de seções que serão animadas na página
     */
     constructor (sections: NodeListOf<HTMLDataElement>) {
@@ -22,13 +26,16 @@ export class Page implements ResponsiveMethods {
     public get getDataAnimate (): NodeListOf<HTMLDataElement> {
         return this.animated_sections;
     }
+
     public set setDataAnimate (sections: NodeListOf<HTMLDataElement>) {
         this.animated_sections = sections;
     }
 
     // Métodos da Classe
 
-    /** Função que ativa o atributo de animações das seções */
+    /** 
+     * Função que ativa o atributo de animações das seções 
+    */
     public activateScrollAnimations (): void {
         const data_animate: NodeListOf<HTMLDataElement> = this.getDataAnimate;
 
@@ -38,7 +45,8 @@ export class Page implements ResponsiveMethods {
         }
     }
 
-    /** Função que ativa uma animação de transição aos elementos conforme o usuário rola a página 
+    /** 
+     * Função que ativa uma animação de transição aos elementos conforme o usuário rola a página 
      * @param animation Nome da classe da animação a ser ativada/removida
     */
     public animateOnScroll (animation: string): void {
@@ -53,12 +61,15 @@ export class Page implements ResponsiveMethods {
         });
     }
 
-    /** Função que leva o usuário de volta ao topo da página */
+    /** 
+     * Função que leva o usuário de volta ao topo da página 
+    */
     public scrollToTop (): void {
         window.scrollTo(0, 0);
     }
 
-    /** Função que mostra o botão de voltar ao topo na tela
+    /**
+     * Função que mostra o botão de voltar ao topo na tela
      * @param back_top_btn Elemento do botão
     */
     public showScrollTopBtn (back_top_btn: HTMLButtonElement): void {
@@ -74,9 +85,10 @@ export class Page implements ResponsiveMethods {
     }
 
 
-    /**Função que muda a classe da navbar quando o usuário rola a página
+    /**
+     * Função que muda a classe da navbar quando o usuário rola a página
      * @param header Cabeçalho/navbar
-     */
+    */
     public changeNavbarOnScroll (header: HTMLElement): void {
         const current_scroll = window.scrollY;
         

@@ -1,16 +1,25 @@
-/** Classe responsável por conter elementos e métodos do Slider da página */
+/** 
+ * Classe responsável por conter elementos e métodos do Slider da página 
+*/
 export class Slider {
     private slides: NodeListOf<HTMLDivElement>;
 
     private arrow_left: HTMLButtonElement;
+
     private arrow_right: HTMLButtonElement;
     
-    /** Construtor da Classe 
+    /** 
+     * Construtor da Classe 
      * @param slides Array contendo os elementos do Slider
      * @param arrL Botão de voltar um slide
      * @param arrR Botão de avançar um slide
     */
-    constructor (slides: NodeListOf<HTMLDivElement>, arrL: HTMLButtonElement, arrR: HTMLButtonElement) {
+    constructor (
+            slides: NodeListOf<HTMLDivElement>, 
+            arrL: HTMLButtonElement, 
+            arrR: HTMLButtonElement
+        ) {
+
         this.slides = slides;
         this.arrow_left = arrL;
         this.arrow_right = arrR;
@@ -21,9 +30,11 @@ export class Slider {
     public get getSlider (): NodeListOf<HTMLDivElement> {
         return this.slides;
     }
+
     public get getArrowLeft (): HTMLButtonElement {
         return this.arrow_left;
     }
+
     public get getArrowRight (): HTMLButtonElement {
         return this.arrow_right;
     }
@@ -31,16 +42,19 @@ export class Slider {
     public set setSlider (slider: NodeListOf<HTMLDivElement>) {
         this.slides = slider;
     }
+
     public set setArrowLeft (arrL: HTMLButtonElement) {
         this.arrow_left = arrL;
     }
+
     public set setArrowRight (arrR: HTMLButtonElement) {
         this.arrow_right = arrR;
     }
 
     // Métodos da classe
 
-    /**Função que remove a classe active de todos os slides
+    /**
+     * Função que remove a classe active de todos os slides
     */
     private clearSlides (): void {
         for (let i = 0; i < this.slides.length; i++) {
@@ -52,17 +66,21 @@ export class Slider {
         }
     }
 
-    /** Função que avança um slide na página
+    /** 
+     * Função que avança um slide na página
      * @param index_slide Posição do slide que será mostrado na página
     */
     private nextSlide (index_slide: number): void {
         this.slides[index_slide].classList.add('active-right');
     }
+
     private previousSlide (index_slide: number): void {
         this.slides[index_slide].classList.add('active-left');
     }
 
-    /** Função responsável pelas interações com o Slider*/
+    /** 
+     * Função responsável pelas interações com o Slider
+    */
     public slideHandler (): void {
         let slide_atual = 0;
 
