@@ -27,10 +27,10 @@ html {
     --gradient-theme-reverse: linear-gradient(to right, var(--primary-theme-color), var(--secondary-theme-color));
     --gradient-theme-bottom: linear-gradient(to bottom, var(--primary-theme-color), var(--secondary-theme-color));
 
-    --heading-font: clamp(6vw, 3.75em, 2.18em);
-    --subheading-font: clamp(4.5vw, 2.75em, 2em);
-    --small-heading-font: clamp(3.5vw, 2.3em, 1.8em);
-    --text-font: clamp(2.5vw, 1.8em, 1.4em);
+    --heading-font: clamp(5vw, 3.75em, 2.18em);
+    --subheading-font: clamp(4vw, 2.75em, 2em);
+    --small-heading-font: clamp(3vw, 2.3em, 1.8em);
+    --text-font: clamp(1.5vw, 1.8em, 1.4em);
 
 }
 
