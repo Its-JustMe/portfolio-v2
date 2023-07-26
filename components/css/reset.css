@@ -29,8 +29,8 @@ html {
 
     --heading-font: clamp(5vw, 3.75em, 2.18em);
     --subheading-font: clamp(4vw, 2.75em, 2em);
-    --small-heading-font: clamp(3vw, 2.3em, 1.8em);
-    --text-font: clamp(1.5vw, 1.8em, 1.4em);
+    --small-heading-font: clamp(2vw, 2.3em, 1.8em);
+    --text-font: clamp(1.3vw, 1.8em, 1.4em);
 
 }
 
