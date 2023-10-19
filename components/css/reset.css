@@ -10,6 +10,14 @@
     color: inherit;
 }
 
+i {
+    color: var(--secondary-theme-color);
+    transition: color .8s;
+}
+i:hover {
+    color: var(--primary-theme-color);
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 6em;
