@@ -34,14 +34,6 @@ import { updateAge } from "./module";
 
         });
 
-        const $projects: NodeListOf<HTMLDivElement> = document.querySelectorAll('.project-container') as NodeListOf<HTMLDivElement>;
-        const $arrow_left: HTMLButtonElement = document.querySelector('button.arrow-btn-left') as HTMLButtonElement;
-        const $arrow_right: HTMLButtonElement = document.querySelector('button.arrow-btn-right') as HTMLButtonElement;
-
-        const slider_projects: Slider = new Slider($projects, $arrow_left, $arrow_right);
-
-        slider_projects.slideHandler();
-
         const $services: NodeListOf<HTMLDivElement> = document.querySelectorAll('.slider > article') as NodeListOf<HTMLDivElement>;
         const $btn_left: HTMLButtonElement = document.querySelector('button.slider-btn.left') as HTMLButtonElement;
         const $btn_right: HTMLButtonElement = document.querySelector('button.slider-btn.right') as HTMLButtonElement;
