@@ -9,10 +9,6 @@ i.gradient-icon {
     background-image: var(--gradient-theme);
 }
 
-i.menu-btn {
-    font-size: 2.8em;
-}
-
 .btn-container {
     width: auto;
     margin-top: 40px;
