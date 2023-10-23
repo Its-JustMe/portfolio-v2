@@ -1,3 +1,18 @@
+i {
+    font-size: 4em;
+    z-index: 2;
+    transition: all .5s;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: var(--gradient-theme);
+}
+
+i.menu-btn {
+    font-size: 6em;
+}
+
 .btn-container {
     width: auto;
     margin-top: 40px;
