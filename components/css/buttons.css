@@ -3,7 +3,8 @@ i.gradient-icon {
     z-index: 2;
     transition: all .5s;
     overflow: hidden;
-    padding: 5px;
+    width: auto;
+    height: auto;
 
     background-clip: text;
     -webkit-background-clip: text;
