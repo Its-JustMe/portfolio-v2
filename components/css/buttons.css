@@ -2,6 +2,8 @@ i.gradient-icon {
     font-size: 3.8em;
     z-index: 2;
     transition: all .5s;
+    overflow: hidden;
+    padding: 5px;
 
     background-clip: text;
     -webkit-background-clip: text;
