@@ -5,6 +5,8 @@ i.gradient-icon {
     overflow: hidden;
     width: auto;
     height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
 
     background-clip: text;
     -webkit-background-clip: text;
