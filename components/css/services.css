@@ -54,6 +54,7 @@
 .slider > button {
     position: absolute;
     background: none;
+    padding: 4px;
 
     cursor: pointer;
 }
