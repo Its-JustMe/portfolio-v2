@@ -53,7 +53,6 @@
 
 .slider > button {
     position: absolute;
-    padding: 1em;
     background: none;
 
     cursor: pointer;
