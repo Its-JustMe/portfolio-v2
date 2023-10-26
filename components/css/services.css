@@ -60,11 +60,11 @@
 .slider > button:hover {
     font-size: 1em;
 }
-.slider > button.left {
+.slider > i.left {
     top: 40%;
         left: clamp(8vw, 2em, 1.5em);
 }
-.slider > button.right {
+.slider > i.right {
     top: 40%;
         right: clamp(8vw, 2em, 1.5em);
 }
