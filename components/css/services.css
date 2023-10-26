@@ -51,13 +51,13 @@
     height: auto;
 }
 
-.slider > button {
+.slider > i {
     position: absolute;
     background: none;
 
     cursor: pointer;
 }
-.slider > button:hover {
+.slider > i:hover {
     font-size: 1em;
 }
 .slider > i.left {
