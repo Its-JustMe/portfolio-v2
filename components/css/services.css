@@ -51,20 +51,21 @@
     height: auto;
 }
 
-.slider > i {
+.slider > button {
     position: absolute;
+    padding: 1em;
     background: none;
 
     cursor: pointer;
 }
-.slider > i:hover {
+.slider > button:hover {
     font-size: 1em;
 }
-.slider > i.left {
+.slider > button.left {
     top: 40%;
         left: clamp(8vw, 2em, 1.5em);
 }
-.slider > i.right {
+.slider > button.right {
     top: 40%;
         right: clamp(8vw, 2em, 1.5em);
 }
