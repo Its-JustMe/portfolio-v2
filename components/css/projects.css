@@ -8,7 +8,7 @@
     flex-basis: clamp(15vw, 450px, 300px);
 
     min-width: 400px;
-    max-width: 480px;
+    max-width: 600px;
 
     height: 220px;
     overflow: hidden;
@@ -23,7 +23,7 @@
 
 .project-info, .link-container {
     visibility: hidden;
-    transition: visibility .6s;
+    transition: visibility .8s;
 }
 
 .project-container:hover .project-info {
