@@ -10,7 +10,6 @@ import { updateAge } from "./module.js";
         const $data_animate_elements = document.querySelectorAll('[data-animar]');
         const $header = document.querySelector('header');
         const portfolio_page = new Page($data_animate_elements);
-        console.log(portfolio_page);
         portfolio_page.activateScrollAnimations();
         this.document.addEventListener('scroll', function () {
             const animation = 'animar';

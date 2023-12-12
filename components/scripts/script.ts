@@ -15,8 +15,6 @@ import { updateAge } from "./module";
         const $header: HTMLElement = document.querySelector('header') as HTMLElement;
         const portfolio_page: Page = new Page($data_animate_elements)
 
-        console.log(portfolio_page);
-
         portfolio_page.activateScrollAnimations();
 
         this.document.addEventListener('scroll', function () {
