@@ -41,7 +41,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 135px;
-    padding: 5px;
+    height: auto;
     gap: 5px;
 }
 
