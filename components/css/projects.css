@@ -23,7 +23,7 @@
 
 .project-info, .link-container {
     visibility: hidden;
-    transition: all .8s;
+    transition: visibility .8s;
 }
 
 .project-container:hover .project-info {
