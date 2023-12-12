@@ -5,19 +5,19 @@
 # Estrutura do Projeto
 <p>O site está estruturado em seções, cada uma focada em aspectos específicos:</p>
 
-# Sobre Mim
+## Sobre Mim
 <p>Na seção "Sobre Mim", apresento uma breve introdução sobre quem sou, minha paixão por desenvolvimento web e minha trajetória acadêmica e profissional.</p>
 
-# Conhecimentos
+## Conhecimentos
 <p>A seção "Conhecimentos" destaca minhas habilidades em diversas tecnologias, utilizando ícones visuais para representar meu domínio em HTML5, CSS3, JavaScript, TypeScript, Bootstrap, NodeJS e Python.</p>
 
-# Projetos Pessoais
+## Projetos Pessoais
 <p>A seção "Projetos Pessoais" exibe alguns dos projetos significativos que desenvolvi. Cada projeto é acompanhado por uma breve descrição, ícones das tecnologias utilizadas e links para o código-fonte e a página do projeto.</p>
 
-# Serviços
+## Serviços
 <p>Na seção "Serviços", apresento os serviços que ofereço, incluindo a criação de websites, manutenção em websites e desenvolvimento de sites responsivos.</p>
 
-# Contato
+## Contato
 <p>No rodapé do site, forneci links para minhas redes sociais, como GitHub, LinkedIn, e-mail e WhatsApp, facilitando o contato e a interação.</p>
 
 # Como Contribuir
