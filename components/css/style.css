@@ -167,6 +167,3 @@ li > a[tabindex]:focus {
     outline: #50abf7 solid 2px;
 }
 
-[tabindex]:focus {
-    outline: #50abf7 solid 2px;
-}

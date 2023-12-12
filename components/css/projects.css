@@ -1,12 +1,15 @@
 #projects {
-    max-width: 1900px;
+    max-width: 2000px;
     justify-content: center;
     align-items: center;
 }
 
 .project-container {
+    flex-basis: clamp(15vw, 450px, 300px);
+
     min-width: 400px;
     max-width: 480px;
+
     height: 220px;
     overflow: hidden;
 
@@ -48,7 +51,6 @@
 .project-info > h3 {
     font-size: 2em;
 } 
-
 
 .link-container > .botao-link {
     width: 130px;
