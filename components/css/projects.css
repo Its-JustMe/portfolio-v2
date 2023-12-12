@@ -23,8 +23,10 @@
 
 .project-info, .link-container {
     visibility: hidden;
-    transform: translate(230px, 0px);
     transition: all .6s;
+}
+.link-container {
+    transition: visibility .6s;
 }
 
 .project-container:hover .project-info {
@@ -38,7 +40,7 @@
 }
 .project-container:hover .link-container {
     visibility: visible;
-    transform: translateY(-220px);
+    transform: translate(230px, -220px);
     display: flex;
     flex-direction: column;
     gap: 5px;
