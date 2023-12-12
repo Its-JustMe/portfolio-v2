@@ -22,6 +22,3 @@
 
 # Como Contribuir
 <p>Fique à vontade para fornecer feedback, sugerir melhorias ou entrar em contato para oportunidades de colaboração. Obrigado por visitar meu site portfólio!</p>
-
-<strong><a href="https://www.linkedin.com/in/arthur-santos-3b61a8267/">LinkedIn: Arthur Santos</a>
-E-mail: <a href="mailto:contato.arthursantosdev@gmail.com">contato.arthursantosdev@gmail.com</a></strong>
