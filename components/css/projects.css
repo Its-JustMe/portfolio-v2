@@ -23,9 +23,6 @@
 
 .project-info, .link-container {
     visibility: hidden;
-    transition: all .6s;
-}
-.link-container {
     transition: visibility .6s;
 }
 
