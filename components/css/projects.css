@@ -39,7 +39,7 @@
     visibility: visible;
     transform: translate(230px, -220px);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 5px;
 }
 
