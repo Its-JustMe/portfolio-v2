@@ -39,9 +39,7 @@
     visibility: visible;
     transform: translate(230px, -220px);
     display: flex;
-    flex-wrap: wrap;
-    width: 135px;
-    height: auto;
+    flex-direction: column;
     gap: 5px;
 }
 
