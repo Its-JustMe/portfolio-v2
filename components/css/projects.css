@@ -5,12 +5,12 @@
 }
 
 .project-container {
-    flex-basis: clamp(10vw, 620px, 460px);
+    flex-basis: clamp(10vw, 610px, 430px);
 
-    min-width: 450px;
+    min-width: 420px;
     max-width: 600px;
 
-    height: auto;
+    height: 220px;
     overflow: hidden;
 
     transition: all .5s;
