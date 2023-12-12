@@ -5,7 +5,7 @@
 }
 
 .project-container {
-    flex-basis: clamp(50vw, 450px, 300px);
+    flex-basis: clamp(10vw, 620px, 420px);
 
     min-width: 400px;
     max-width: 600px;
