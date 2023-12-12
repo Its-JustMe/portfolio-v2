@@ -5,9 +5,9 @@
 }
 
 .project-container {
-    flex-basis: clamp(10vw, 620px, 420px);
+    flex-basis: clamp(10vw, 620px, 430px);
 
-    min-width: 400px;
+    min-width: 420px;
     max-width: 600px;
 
     height: 220px;
