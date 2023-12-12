@@ -1,11 +1,11 @@
 #projects {
-    max-width: 2000px;
+    width: 90vw;
     justify-content: center;
     align-items: center;
 }
 
 .project-container {
-    flex-basis: clamp(15vw, 450px, 300px);
+    flex-basis: clamp(50vw, 450px, 300px);
 
     min-width: 400px;
     max-width: 600px;
@@ -23,7 +23,7 @@
 
 .project-info, .link-container {
     visibility: hidden;
-    transition: visibility .8s;
+    transition: all .8s;
 }
 
 .project-container:hover .project-info {
