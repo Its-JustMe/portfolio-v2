@@ -4,9 +4,6 @@ import { updateAge } from "./module";
 
 (() => {
     window.addEventListener('DOMContentLoaded', function () {
-        
-        const $download_cv_btn: HTMLAnchorElement = document.querySelector('#download-cv') as HTMLAnchorElement;
-        $download_cv_btn.addEventListener('click', () => alert('Disponível em breve'));
 
         const $age: HTMLSpanElement = document.querySelector('span#age') as HTMLSpanElement;
         $age.textContent = `${updateAge()}`;

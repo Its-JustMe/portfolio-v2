@@ -3,8 +3,6 @@ import { Page } from "./main_class.js";
 import { updateAge } from "./module.js";
 (() => {
     window.addEventListener('DOMContentLoaded', function () {
-        const $download_cv_btn = document.querySelector('#download-cv');
-        $download_cv_btn.addEventListener('click', () => alert('Disponível em breve'));
         const $age = document.querySelector('span#age');
         $age.textContent = `${updateAge()}`;
         const $data_animate_elements = document.querySelectorAll('[data-animar]');
