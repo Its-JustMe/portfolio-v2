@@ -56,7 +56,7 @@
 } 
 
 .project-info .gradient-icon {
-    font-size: 1.4em;
+    font-size: 1.8em;
 }
 
 .link-container > .botao-link {
@@ -74,4 +74,9 @@
     color: var(--primary-color);
     background: transparent;
     border: 2px solid var(--primary-color);
+}
+
+.project-info {
+    height: 100%;
+    padding: 0.7em;
 }
