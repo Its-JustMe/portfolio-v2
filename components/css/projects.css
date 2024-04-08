@@ -2,6 +2,7 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 .project-container {
@@ -34,8 +35,6 @@
     visibility: visible;
     background-color: #0000009e;
     transform: translateY(-115px);
-    padding-bottom: 1em;
-    padding-left: 5px;
     width: 100%;
 
 }
@@ -56,13 +55,15 @@
     font-size: clamp(2vw, 2em, 1.2em);
 } 
 
+.project-info .gradient-icon {
+    font-size: 1.4em;
+}
+
 .link-container > .botao-link {
     width: 110px;
     text-align: center;
 
     position: relative;
-
-    padding: 5px;
 
     border-radius: 2em;
     cursor: pointer;
