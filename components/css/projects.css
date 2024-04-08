@@ -1,5 +1,5 @@
 #projects {
-    width: 90vw;
+    width: 100vw;
     justify-content: center;
     align-items: center;
 }
@@ -7,7 +7,7 @@
 .project-container {
     flex-basis: clamp(10vw, 610px, 430px);
 
-    min-width: 420px;
+    min-width: 450px;
     max-width: 600px;
 
     height: 220px;
@@ -53,11 +53,11 @@
 }
 
 .project-info > h3 {
-    font-size: 2em;
+    font-size: clamp(2vw, 2em, 1.2em);
 } 
 
 .link-container > .botao-link {
-    width: 130px;
+    width: 110px;
     text-align: center;
 
     position: relative;
@@ -67,7 +67,7 @@
     border-radius: 2em;
     cursor: pointer;
 
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bolder;
 
     color: var(--primary-color);
